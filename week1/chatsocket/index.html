@@ -7,6 +7,10 @@
     <title>ChatSocket</title>
 </head>
 <body>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 155c3a9d455b25557dd5102d2c233daf9b227eb4
     <h1>Welcome to ChatSocket</h1>
     <input type="text" name="message">
     <br>
@@ -15,12 +19,21 @@
     <h2>ChatSocket Log</h2>
     <div class="chatlog"></div>
     <script>
+<<<<<<< HEAD
         //sets up server connection to client
         var ws = new WebSocket('ws://localhost:3000', 'echo-protocol'),
         chatlog = document.querySelector('.chatlog')
         message = document.querySelector('input[name="message"]')
 
         //event listener for button click
+=======
+        //this sets up server connection to client and query's message input and chat log
+        var ws = new WebSocket('ws://localhost:3000', 'echo-protocol'),
+        chatlog = document.querySelector('.chatlog'),
+        message = document.querySelector('input[name="message"]')
+
+        //adds event listener for when user clicks the button
+>>>>>>> 155c3a9d455b25557dd5102d2c233daf9b227eb4
         document.querySelector('button').addEventListener('click', sendMessage)
 
         //function to send message
@@ -29,7 +42,11 @@
         }
 
         ws.addEventListener('open', function(e){
+<<<<<<< HEAD
             chatlog.insertAdjacentHTML("beforeend", "<br>, connection made")
+=======
+            chatlog.insertAdjacentHTML("beforeend", "<br> connection made")
+>>>>>>> 155c3a9d455b25557dd5102d2c233daf9b227eb4
         })
 
         ws.addEventListener('message', function(e){

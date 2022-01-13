@@ -1,13 +1,21 @@
 {
   "name": "chatsocket",
   "version": "0.0.1",
+<<<<<<< HEAD
   "description": "It's a chat app using websocket",
+=======
+  "description": "Its a chat app using websocket",
+>>>>>>> 155c3a9d455b25557dd5102d2c233daf9b227eb4
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
+<<<<<<< HEAD
   "author": "Logan",
+=======
+  "author": "Jordan",
+>>>>>>> 155c3a9d455b25557dd5102d2c233daf9b227eb4
   "license": "ISC",
   "dependencies": {
     "ws": "~7.4.2"
